@@ -1,0 +1,6 @@
+port,HTTPS_token,Request_URL,SFH,Submitting_to_email,Abnormal_URL,Redirect,on_mouseover,RightClick,popUpWidnow,Iframe,age_of_domain,DNSRecord,Page_Rank,Google_Index,Statistical_report,Result
+
+1,1,1,1,1,1,0,0,1,0,0,1,0,0,0,1,Result->1
+1,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,Result->1
+1,1,0,0,1,1,0,1,1,1,1,0,1,0,1,1,Result->0
+

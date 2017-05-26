@@ -1,0 +1,1456 @@
+<?xml version="1.0" ?>
+<MLDBIF>
+<DB>
+
+<DESCRIPTION>
+	<SHORT></SHORT>
+	<DETAILED></DETAILED>
+</DESCRIPTION>
+
+<!-- Neural Network Definition -->
+<NETWORK>
+
+	<!-- Node Definitions -->
+
+	<NODE>
+		<NAME>port</NAME>
+		<WEIGHT>1.0</WEIGHT>
+		<XPOS>7558.8076</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>0</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>HTTPS_token</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>7611.6997</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>1</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Request_URL</NAME>
+		<WEIGHT>1.0</WEIGHT>
+		<XPOS>7664.592</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>2</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>SFH</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>7717.4844</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>3</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Submitting_to_email</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>7770.377</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>4</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Abnormal_URL</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>7823.269</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>5</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Redirect</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>7876.161</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>6</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>on_mouseover</NAME>
+		<WEIGHT>1.0</WEIGHT>
+		<XPOS>7929.0537</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>7</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>RightClick</NAME>
+		<WEIGHT>1.0</WEIGHT>
+		<XPOS>7981.9463</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>8</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>popUpWidnow</NAME>
+		<WEIGHT>1.0</WEIGHT>
+		<XPOS>8034.8384</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>9</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Iframe</NAME>
+		<WEIGHT>1.0</WEIGHT>
+		<XPOS>8087.7305</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>10</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>age_of_domain</NAME>
+		<WEIGHT>1.0</WEIGHT>
+		<XPOS>8140.623</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>11</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>DNSRecord</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>8193.516</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>12</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Page_Rank</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>8246.408</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>13</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Google_Index</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>8299.3</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>14</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Statistical_report</NAME>
+		<WEIGHT>0.0</WEIGHT>
+		<XPOS>8352.192</XPOS>
+		<YPOS>5203.6074</YPOS>
+		<INDEX>15</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Hidden 1</NAME>
+		<WEIGHT>-0.29590580916018006</WEIGHT>
+		<XPOS>7892.8076</XPOS>
+		<YPOS>5317.5</YPOS>
+		<INDEX>16</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Result</NAME>
+		<WEIGHT>-1.0925888550806941</WEIGHT>
+		<XPOS>7895.8076</XPOS>
+		<YPOS>5401.3926</YPOS>
+		<INDEX>17</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+
+	<!-- Edge Definitions -->
+
+	<EDGE>
+		<STARTINDEX>0</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>0.9667372048892756</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>1</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>0.1800980489652763</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>2</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>1.0008987903092113</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>3</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>1.1883584915662548</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>4</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>0.5929759793377186</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>5</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>0.6242276393709992</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>6</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>-0.4980113375377736</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>7</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>0.41193634298592235</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>8</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>-0.25870813109879104</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>9</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>-0.8463690641087931</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>10</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>-1.3357670171314662</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>11</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>0.009733426779816225</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>12</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>0.7712311429304917</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>13</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>1.8427083006162235</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>14</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>-0.5934470243153204</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>15</STARTINDEX>
+		<ENDINDEX>16</ENDINDEX>
+		<WEIGHT>-0.9280326240887298</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>16</STARTINDEX>
+		<ENDINDEX>17</ENDINDEX>
+		<WEIGHT>3.0690988699051447</WEIGHT>
+	</EDGE>
+
+</NETWORK>
+
+<!-- Example Database -->
+<EXAMPLES>
+
+	<!-- Parameter Definition -->
+	<PARAMETER type=input>port</PARAMETER>
+	<PARAMETER type=input>HTTPS_token</PARAMETER>
+	<PARAMETER type=input>Request_URL</PARAMETER>
+	<PARAMETER type=input>SFH</PARAMETER>
+	<PARAMETER type=input>Submitting_to_email</PARAMETER>
+	<PARAMETER type=input>Abnormal_URL</PARAMETER>
+	<PARAMETER type=input>Redirect</PARAMETER>
+	<PARAMETER type=input>on_mouseover</PARAMETER>
+	<PARAMETER type=input>RightClick</PARAMETER>
+	<PARAMETER type=input>popUpWidnow</PARAMETER>
+	<PARAMETER type=input>Iframe</PARAMETER>
+	<PARAMETER type=input>age_of_domain</PARAMETER>
+	<PARAMETER type=input>DNSRecord</PARAMETER>
+	<PARAMETER type=input>Page_Rank</PARAMETER>
+	<PARAMETER type=input>Google_Index</PARAMETER>
+	<PARAMETER type=input>Statistical_report</PARAMETER>
+	<PARAMETER type=output>Result</PARAMETER>
+
+	<!-- Examples -->
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">1</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">0</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">0</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">0</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">1</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">0</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">1</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">0</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">0</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">1</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">1</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">1</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">0</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">1</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">0</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">1</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">1</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">1</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">0</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">1</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">1</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">0</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">0</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">0</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">0</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">0</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">0</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">1</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">1</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">0</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">0</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">0</VALUE>
+		<VALUE parameter="Abnormal_URL">0</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">0</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">0</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">0</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="port">1</VALUE>
+		<VALUE parameter="HTTPS_token">1</VALUE>
+		<VALUE parameter="Request_URL">0</VALUE>
+		<VALUE parameter="SFH">0</VALUE>
+		<VALUE parameter="Submitting_to_email">1</VALUE>
+		<VALUE parameter="Abnormal_URL">1</VALUE>
+		<VALUE parameter="Redirect">0</VALUE>
+		<VALUE parameter="on_mouseover">1</VALUE>
+		<VALUE parameter="RightClick">1</VALUE>
+		<VALUE parameter="popUpWidnow">1</VALUE>
+		<VALUE parameter="Iframe">1</VALUE>
+		<VALUE parameter="age_of_domain">0</VALUE>
+		<VALUE parameter="DNSRecord">1</VALUE>
+		<VALUE parameter="Page_Rank">1</VALUE>
+		<VALUE parameter="Google_Index">1</VALUE>
+		<VALUE parameter="Statistical_report">1</VALUE>
+		<VALUE parameter="Result">1</VALUE>
+	</EXAMPLE>
+</EXAMPLES>
+
+</DB>
+</MLDBIF>
+
+
