@@ -1,0 +1,38 @@
+*Chosen data:
+person(ann,female).
+person(beatrice,female).
+person(harry,male).
+person(gail,female).
+person(terry,male).
+person(terri,female).
+person(melvin,male).
+person(maria,female).
+
+*Rules:
+father(A)<- parent(A,B)&person(A,male).
+mother(A)<- parent(A,B)&person(A,female).
+husband(A)<- married(A,B)&person(A,male).
+husband(A)<- married(B,A)&person(A,male).
+wife(A)<- married(A,B)&person(A,female).
+wife(A)<- married(B,A)&person(A,female).
+son(A)<-parent(B,A)&person(A,male).
+daughter(A)<-parent(B,A)&person(A,female).
+brother(A,B)<-parent(C,A)&parent(C,B)&A\=B&person(A,male).
+sister(A,B)<-parent(C,A)&parent(C,B)&A\=B&person(A,female).
+uncle(A)<-brother(A,C)&parent(C,B).
+aunt(A)<-sister(A,C)&parent(C,B).
+grandfather(A,B)<-parent(C,B)&parent(A,C)&person(A,male).
+grandmother(A,B)<-parent(C,B)&parent(A,C)&person(A,female).
+
+*Additional Rules:
+granddaughter(A)<-person(A,female)&grandfather(B,A).
+granddaughter(A)<-person(A,female)&grandmother(B,A).
+sibling(A,B)<-brother(A,B).
+sibling(A,B)<-sister(A,B).
+marriedBSMarried(A)<-married(A,B).
+marriedBSMarried(A)<-married(B,A).
+marriedBSMarried(A)<-brother(B,A)&married(C,B).
+marriedBSMarried(A)<-sister(B,A)&married(B,C).
+GGrandMother(A)<-grandmother(A,B)&mother(B).
+GGrandMother(A)<-grandmother(A,B)&father(B).
+ChildGrandFather(A)<-grandfather(A,B)&parent(C,A).
